@@ -26,10 +26,33 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('testPractice');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('testPractice app is running!');
-  });
+  // it('should render title', () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   fixture.detectChanges(); 
+  //   const compiled = fixture.debugElement.nativeElement;
+  //   expect(compiled.querySelector('.content span').textContent).toContain('testPractice app is running!');
+  // });
+
+
+  
+const fun1=new AppComponent();
+
+it('this function add two number',()=>{
+  expect(fun1.addTwo(10,20)).toEqual(30);
 });
+
+it('get number  ',()=>{
+  expect(fun1.myfun(1,3)).toEqual(4);
+});
+
+  
+it('get number  ',()=>{
+  expect(fun1.myfun(0,3)).toEqual(3);
+});
+
+
+});
+
+
+
+

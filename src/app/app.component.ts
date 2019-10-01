@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'testPractice';
+  addTwo(a:number,b:number):number{
+    return a+b;
+  }
+
+  static addThree(a:number,b:number):number{
+    return a+b;
+  }
+  myfun(a:any,b:any):number{
+    return a+b;
+
+  }
+
 }
+
